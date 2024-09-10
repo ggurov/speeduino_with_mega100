@@ -2602,6 +2602,60 @@ void setPinMapping(byte boardID)
       
     #endif
       break;
+
+    case 61: // MEGA32BLUE 0.4 board pinout
+        //Pin definitions for experimental mega replacement by gurov for 0.4 board, defined as 4x4 
+        pinInjector1 = PD8; //
+        pinInjector2 = PD9; //
+        pinInjector3 = PD10; //
+        pinInjector4 = PD11; //
+        pinInjector5 = PA8; //
+        // pinInjector6 = PE11; //
+        // pinInjector7 = PE14; //
+        // pinInjector8 = PE13; //
+
+
+        pinCoil1 = PE2; //
+        pinCoil2 = PE3; //
+        pinCoil3 = PC13;
+        pinCoil4 = PE7;//
+        // pinCoil5 = PD9;  //
+        // pinCoil6 = PB7;  //
+
+        pinVVT_1 = PB12; //
+        pinVVT_2 = PE6; //
+        pinVSS   = PB4;
+
+
+
+        pinBaro = PA5;  //
+        pinIAT = PA0;   //
+        pinTPS = PA2;   //
+        pinMAP = PA3;   //
+        pinCLT = PA1;   //
+        pinO2 = PB0;    //
+        pinBat = PA4;   //
+
+        pinBoost = PB15; //
+        pinIdle1 = PB13; //
+        pinIdle2 = PB14;
+        pinTachOut = PE8; //
+        pinFlex = PD7;
+        pinLaunch = PB8;
+
+
+        pinTrigger = PD4; //
+        pinTrigger2 = PD3; //
+        pinTrigger3 = PB6; //
+        pinStepperEnable = PA15; //
+        pinStepperStep = PB11; //
+        pinStepperDir = PB10; //
+
+        pinFuelPump = PE11; //
+        pinFan = PE9; //
+      break;
+
+
     default:
       #if defined(STM32F407xx)
       //Pin definitions for experimental board Tjeerd 

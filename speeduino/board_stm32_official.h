@@ -89,7 +89,7 @@ inline uint32_t  digitalPinToInterrupt(uint32_t Interrupt_pin) { return Interrup
 #endif
 
 #if defined(SD_LOGGING)
-  #define RTC_ENABLED
+   #define RTC_ENABLED
   //SD logging with STM32 uses SD card in SPI mode, because used SD library doesn't support SDIO implementation. By default SPI3 is used that uses same pins as SDIO also, but in different order.
   extern SPIClass SD_SPI; //SPI3_MOSI, SPI3_MISO, SPI3_SCK
   #define SD_CONFIG SdSpiConfig(SD_CS_PIN, DEDICATED_SPI, SD_SCK_MHZ(50), &SD_SPI)
